@@ -1,0 +1,9 @@
+Load: copy a byte or a word from main memory to register, overwriting the previous contents of the register.
+Store: copy a byte or a word from register
+Operate:
+Jump:
+
+
+
+
+
