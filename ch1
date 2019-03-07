@@ -1,0 +1,53 @@
+.c  ->  .i  ->  .s  ->  .o  ->  executable
+    cpp     cc1     as      ld
+
+buses:
+    electrical condiuts
+    carry bytes of information back and forth between the components
+    transfer fixed-sized chunks of bytes known as words.
+    
+IO devices:
+    the system's connection to the external world
+    I/O devices     <--->   controller/adapter      <--->       I/O bus
+    controller: chip sets in the device itself or motherboard
+    adapter:    card that plugs into a slot on the motherboard
+        the purpose of both is to transfer information between I/O devices and I/O bus
+        
+main memory:
+    temporary storage device 
+    DRAM/linear array of bytes
+    
+central processing unit:
+    engine that interprets instructions stored in main memory
+    program counter points to main memory
+        read/interpret/perform/update
+    some simple operations that CPU might carry out at the request of an instruction:
+        Load:
+            copy a byte or a word from main memory into a register, overwriting the previous contents of the register.
+        Store:
+            copy a byte or a word from a register to a location in main memory, overwriting the previous contents of that location
+        Operate:
+            copy the ocntents of two registers to the ALU, perform an arithmetic operation on the two words, and store the result in a register, overwriting the previous contents of that register
+        Jump:
+            extract a word from the insturction itself and copy that word into the PC, overwriting the previous value of the PC.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
